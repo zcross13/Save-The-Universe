@@ -1,19 +1,64 @@
 #topRow {
     display:flex; 
-    flex-direction: row;
-    border: 1px solid; 
-    border-color: aqua;
+    flex-direction: row; 
     justify-content: center;
+    align-items: flex-end;
 }
 
-#USS_Schwarzenegger {
-    border: 1px solid; 
+
+#USS_Schwarzenegger img {
+    height: 200px;
 }
 
-#alien_ships{
-    border: 1px solid; 
+
+#alien_ships img {
+    margin-top: 50px;
 }
 
 .ship {
-    margin: 20px;
+    margin: 15px 40px;
+}
+
+#bottomRow {
+    padding:20px; 
+    font: 20pt Arial; 
+}
+
+.stats {
+    width:350px; 
+    height: 400px;
+}
+
+.healthLabel {
+    margin-top: 400px;
+    font:18pt Arial; 
+    font-weight: bold;
+}
+
+.stats button {
+    background-color: white;
+    border: 3px solid; 
+    border-color: black;
+    font:10pt Arial; 
+    border-radius: 10px;
+    padding: 15px 25px; 
+    font-weight: bold;
+}
+
+.stats button:hover{
+    background-color: black;
+    color: white; 
+}
+
+.hpBorder {
+    width:300px;
+    height:30px;
+    border:3px solid; 
+    border-color: black;
+}
+
+.hpBar {
+    width:300px; 
+    height:30px;
+    background-color: green;
 }

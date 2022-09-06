@@ -13,36 +13,32 @@
         <div id="topRow">
             <div id="playerStats" class="stats">
                 <span class="healthLabel">HEALTH</span><br>
-                <div class="hpBored">
-                    <div id="playerHP" class="hpbar"></div>
+                <div class="hpBorder">
+                    <div id="playerHP" class="hpBar"></div>
                 </div>
                 <p id="playerMoves">
-                    <span class="healthLabel">MOVES</span>
+                    <span class="healthLabel">MOVES</span><br>
                     <button onclick="blast()" class="button">BLAST</button>
                     <button onclick="retreat()" class="button">RETREAT</button>
                 </p>
             </div>
             <div id="USS_Schwarzenegger" class="ship">
-                <div class="image-container">
-                    <img src="https://www.pngkey.com/png/full/28-280173_pixel-spaceship-png-pixel.png" alt="">
-                    </div>
+                    <img src="https://www.pngkey.com/png/full/28-280173_pixel-spaceship-png-pixel.png">
             </div>
             <div id="alien_ships" class="ship">
-                <div class="image-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-XyUOFf3Ou7yExy9FH6l9O9ycR0UhyjSumw&usqp=CAU" alt="">
-                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-XyUOFf3Ou7yExy9FH6l9O9ycR0UhyjSumw&usqp=CAU">
             </div>
             <div id="alien_stats" class="stats">
                 <span class="healthLabel">HEALTH</span>
-                <div class="hpBored">
-                    <div id="alienHP" class="hpbar"></div>
+                <div class="hpBorder">
+                    <div id="alienHP" class="hpBar"></div>
                 </div>
             </div>
         </div>
         <div id="bottomRow">
             <h1>YOU  MUST SAVE THE UNIVERSE</h1>
-            <p>It up to you to save the day</p>
-            <button onclick="beginBattle()" class="button"
+            <p>It up to you to save the day. Blast away the alien ships before they have the chance to destroy earth</p>
+            <button onclick="beginBattle()" class="button">Start Game</button>
         </div>
     </div>
 </body>

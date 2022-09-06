@@ -72,7 +72,8 @@ function blast (){
     }
 }
 
-// function retreat (){
-
-// }
+//Event listener for retreat 
+function retreat () {
+    let retreatBtn = docu
+}
 
