@@ -22,11 +22,13 @@
 #bottomRow {
     padding:20px; 
     font: 20pt Arial; 
+    text-align: center;
 }
 
 .stats {
     width:350px; 
     height: 400px;
+    visibility: hidden;
 }
 
 .healthLabel {
@@ -35,7 +37,7 @@
     font-weight: bold;
 }
 
-.stats button {
+.button {
     background-color: white;
     border: 3px solid; 
     border-color: black;
@@ -45,7 +47,7 @@
     font-weight: bold;
 }
 
-.stats button:hover{
+.button:hover{
     background-color: black;
     color: white; 
 }
