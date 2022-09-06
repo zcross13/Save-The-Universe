@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script defer src="app.js"></script>
+    <title>Save The Universe</title>
+</head>
+<body>
+    <div id="container">
+        <div id="topRow">
+            <div id="playerStats" class="stats">
+                <span class="healthLabel">HEALTH</span><br>
+                <div class="hpBored">
+                    <div id="playerHP" class="hpbar"></div>
+                </div>
+                <p id="playerMoves">
+                    <span class="healthLabel">MOVES</span>
+                    <button onclick="blast()" class="button">BLAST</button>
+                    <button onclick="retreat()" class="button">RETREAT</button>
+                </p>
+            </div>
+            <div id="USS_Schwarzenegger" class="ship">
+                <div class="image-container">
+                    <img src="https://www.pngkey.com/png/full/28-280173_pixel-spaceship-png-pixel.png" alt="">
+                    </div>
+            </div>
+            <div id="alien_ships" class="ship">
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-XyUOFf3Ou7yExy9FH6l9O9ycR0UhyjSumw&usqp=CAU" alt="">
+                    </div>
+            </div>
+            <div id="alien_stats" class="stats">
+                <span class="healthLabel">HEALTH</span>
+                <div class="hpBored">
+                    <div id="alienHP" class="hpbar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomRow">
+            <h1>YOU  MUST SAVE THE UNIVERSE</h1>
+            <p>It up to you to save the day</p>
+            <button onclick="beginBattle()" class="button"
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#topRow {
+    display:flex; 
+    flex-direction: row;
+    border: 1px solid; 
+    border-color: aqua;
+    justify-content: center;
+}
+
+#USS_Schwarzenegger {
+    border: 1px solid; 
+}
+
+#alien_ships{
+    border: 1px solid; 
+}
+
+.ship {
+    margin: 20px;
+}
