@@ -54,7 +54,6 @@ for (let i=0; alienShips.length<6; i++){
     alienShips.push(new Ship(randomHull(),randomFirepower(), randomAccuracy()))
 }
 
-let currentAlien = alienShips[0]
 
 
 // Functions
@@ -67,24 +66,26 @@ function beginBattle (){
 
 
 function blast () {
+    let currentAlien = alienShips[0];
     let hitAttack = (Math.floor(Math.random() * 10)/ 10); 
     if(hitAttack <= 0.7){
         currentAlien.hull -= USS_Schwarzenegger.firepower; 
-        if(currentAlien.hull < 0){
-            currentAlien.hull = 0 
-        }
         bottomRow.innerHTML = "You damage the alien ship. Alien ship health is now " + currentAlien.hull ; 
         let alienHPBar = (currentAlien.hull/100)*300; 
         alienHP.style.width = alienHPBar + 'px';
     }else {
         bottomRow.innerHTML ="You missed HAHA"
     }
-    if(currentAlien.hull == 0){
+    if(currentAlien.hull <= 0){
+        if(currentAlien.hull < 0){
+            currentAlien.hull=0
+        }
         bottomRow.innerHTML ="You destroy this alien + </br>Retreat </br>or </br>finish this!" 
         alienImage.style.visibility="hidden";
         blastBtn.style.visibility="hidden";
-        deleteShip();
+        deleteShip()
         noShips()
+        console.log(currentAlien)
     }else{
         alienAttack()
     }
@@ -117,11 +118,12 @@ function noShips (){
 }
 
 function alienAttack () {
+    let currentAlien= alienShips[0]
     if(currentAlien.hull > 0){
         let attack = currentAlien.accuracy; 
         if (attack <0.8 && attack>0.6){
             USS_Schwarzenegger.hull -= currentAlien.firepower;
-            bottomRow.innerHTML = "You took damage" + currentAlien.firepower + "Your health is now " + USS_Schwarzenegger.hull
+            bottomRow.innerHTML = "You took " + currentAlien.firepower + "damage " + "Your health is now " + USS_Schwarzenegger.hull
             let playerHPBar = (USS_Schwarzenegger.hull/100)*300; 
             playerHP.style.width = playerHPBar + 'px';
         }else {
