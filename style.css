@@ -1,3 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/invasion-2000');
+
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZWCzOMbbUzsiML8ume5vDlRKNQe_OYp-7tV1LXSaNNTd1fZdBClnUzvZbfNeqG27f3o&usqp=CAU');
+    font-family: 'Invasion2000', sans-serif;
+    font-size: xx-large;
+    font-style: bold;
+    text-align: center;
+}
+
 #topRow {
     display:flex; 
     flex-direction: row; 
@@ -21,8 +31,10 @@
 
 #bottomRow {
     padding:20px; 
-    font: 20pt Arial; 
+    font-family: 'Invasion2000', sans-serif;; 
     text-align: center;
+    color:red;
+    font-size: 50px;
 }
 
 .stats {
@@ -33,18 +45,21 @@
 
 .healthLabel {
     margin-top: 400px;
-    font:18pt Arial; 
+    font-family: 'Invasion2000', sans-serif; 
     font-weight: bold;
+    font-size: 25px;
+    color:red;
 }
 
 .button {
     background-color: white;
     border: 3px solid; 
     border-color: black;
-    font:10pt Arial; 
+    font-family: 'Invasion2000', sans-serif;
     border-radius: 10px;
     padding: 15px 25px; 
     font-weight: bold;
+    font-size: 25px;
 }
 
 .button:hover{
@@ -64,3 +79,8 @@
     height:30px;
     background-color: green;
 }
+
+#USS_Schwarzenegger img {
+    visibility: visible;
+}
+
